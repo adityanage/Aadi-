@@ -3,149 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Website</title>
+    <title>Nexus | The Future of Workflow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* General Styles */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-
-        /* Navigation */
-        nav {
-            background: #2c3e50;
-            color: #fff;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-        }
-
-        nav .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            margin: 0;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #3498db;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #3498db;
-            color: #fff;
-            padding: 10px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-        /* Content Section */
-        .container {
-            max-width: 1100px;
-            margin: 50px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        /* Footer */
-        footer {
-            background: #2c3e50;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-900">
 
-    <nav>
-        <div class="logo">BrandName</div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <nav class="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold tracking-tight text-blue-600">NEXUS</div>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#features" class="hover:text-blue-600 transition">Features</a>
+            <a href="#pricing" class="hover:text-blue-600 transition">Pricing</a>
+            <a href="#" class="hover:text-blue-600 transition">About</a>
+        </div>
+        <a href="#" class="bg-blue-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">Get Started</a>
     </nav>
 
-    <header class="hero">
-        <h1>Building the Future</h1>
-        <p>A clean, modern approach to web development starts here.</p>
-        <a href="#" class="btn">Get Started</a>
+    <header class="max-w-7xl mx-auto px-8 py-20 text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6">
+            Work smarter, not <span class="text-blue-600">harder.</span>
+        </h1>
+        <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+            Nexus integrates all your favorite tools into one seamless dashboard. Stop jumping between tabs and start finishing your projects.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <button class="bg-blue-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:shadow-lg transition">Start Free Trial</button>
+            <button class="bg-white border border-gray-300 px-8 py-4 rounded-xl text-lg font-bold hover:bg-gray-50 transition">View Demo</button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="App Preview" class="mt-16 rounded-2xl shadow-2xl border border-gray-200">
     </header>
 
-    <section class="container">
-        <div class="card">
-            <h3>Responsive Design</h3>
-            <p>Your website will look amazing on phones, tablets, and desktops alike.</p>
-        </div>
-        <div class="card">
-            <h3>Modern CSS</h3>
-            <p>Utilizing Flexbox and Grid for a layout that is both flexible and robust.</p>
-        </div>
-        <div class="card">
-            <h3>Fast Performance</h3>
-            <p>Lightweight code ensures your users aren't left waiting for content to load.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 BrandName. Built with Gemini.</p>
-    </footer>
-
-</body>
-</html>
+    <section id="features" class="bg-white py-24">
+        <div class="max-w-7
